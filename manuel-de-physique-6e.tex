@@ -4,28 +4,41 @@
 \usepackage{amsmath,amssymb,amsfonts}
 
 %\usepackage[a4paper, total={17cm, 26cm}]{geometry}
-\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage[a4paper,lmargin=1.5cm,rmargin=1.5cm]{geometry}
 \usepackage{color}
+\usepackage{bookmark}
+\usepackage{siunitx}
 \usepackage{hyperref} % Pour liens internets cliquables
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue, %cyan
     pdftitle={Cours de physique - DLPP - 2022},
     %pdfpagemode=FullScreen,
     }
 
+%
+% pour regrouper exercices et solutions dans un seul fichier et
+% les afficher tantôt ensemble, tantôt séparément
+%
+%\usepackage{exsol}
+
+%
+% pour avoir des références sur internet et un pdf cliquable
+%
 \usepackage{hyperref}
 \usepackage[
     type={CC},
     modifier={by-nc-sa},
-    version={3.0},
+    version={4.0}
 ]{doclicense}
 
 \usepackage{multicol}
-\setlength{\columnsep}{0.5cm}
+\setlength{\columnsep}{0.8cm}
+\setlength{\columnseprule}{1pt}
 \def\columnseprulecolor{\color{black}}
+
 
 % pour les pieds de page et entêtes
 \usepackage{fancyhdr}
@@ -33,7 +46,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{Cours de physique}
-\rhead{Oscillateur harmonique}
+\rhead{énergie, oscillateur et ondes}
 \lfoot{En cours de rédaction et correction - ne pas distribuer - \ccbyncsa}
 \rfoot{Page \thepage}
 
@@ -43,29 +56,31 @@
 \usetikzlibrary{arrows}
 
 \usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{xltxtra}
-\usepackage{array}
-\usepackage{hhline}
+%\usepackage{xunicode}
+%\usepackage{xltxtra}
+%\usepackage{array}
+%\usepackage{hhline}
 \usepackage{graphicx}
-\usepackage{polyglossia}
+%\usepackage{polyglossia}
 \usepackage{longtable}
-
-\setdefaultlanguage{french}
+%\usepackage{babel}[french]
+%\setdefaultlanguage{french}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-  
+
 \newcounter{Text}
 \renewcommand\theText{\arabic{Text}}
 \title{Cours de physique de $6^e$ secondaire - 2021-2022 \\
 En cours de rédaction et correction - ne pas distribuer \\
 tout commentaire bienvenu par email à \\
  manueldephysique@educode.be}
-\author{Alexandra David - Corinne Leyssen - Nicolas Pettiaux - Matteo Poncé}
+%\author{Alexandra David - Corinne Leyssen - Nicolas Pettiaux - Matteo Poncé}
+\author{James Dann - Corinne Leyssen - Nicolas Pettiaux}
 
-\includeonly{
-COURS_01-Energie-travail-puissance-rendement.tex,
+%\includeonly{
+%COURS_00-exercices-test.tex
+%COURS_01-Energie-travail-puissance-rendement
 %COURS_02-Energie-OHEXERCRESOL.tex,
 %COURS_02-Energie_OH.tex
 %COURS_03-Longueur_d_onde_et_ondes_progressives.tex,
@@ -83,7 +98,7 @@ COURS_01-Energie-travail-puissance-rendement.tex,
 %COURS_15_-Energie_nucléaire.tex
 %COURS_16__-thermodynamique.tex
 %COURS__-Diffraction_de_la_lumière_par_un_réseau+_exerc_résolus.tex
-}
+%}
 
 
 \begin{document}
@@ -96,9 +111,8 @@ COURS_01-Energie-travail-puissance-rendement.tex,
 
 \hrulefill
 
-
-
-\include{COURS_01-Energie-travail-puissance-rendement.tex}
+%\include{COURS_00-exercices-test.tex}
+\include{COURS_01-Energie-travail-puissance-rendement}
 \include{COURS_02-Energie-OH.tex}
 \include{COURS_03-Longueur_d_onde_et_ondes_progressives.tex}
 \include{COURS_04_-Intensité_sonore.tex}
@@ -112,11 +126,10 @@ COURS_01-Energie-travail-puissance-rendement.tex,
 \include{COURS_12-Indice_de_réfraction_lumière.tex}
 \include{COURS_13_-Ondes_électromagnétiques.tex}
 \include{COURS_14_-Effet_photoélectrique_et_lumière.tex}
-\include{COURS_15_-Energie_nucléaire.tex}
+include{COURS_15_-Energie_nucléaire.tex}
 \include{COURS_16__-thermodynamique.tex}
 \include{COURS__-Diffraction_de_la_lumière_par_un_réseau+_exerc_résolus.tex}
 
 
 \end{document}
-
 

@@ -1,7 +1,7 @@
 
 \section{Énergie, travail, puissance et rendement}
 
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
 \subsection{Travail d'une force}
 
@@ -19,7 +19,7 @@ L'unité du travail est celle de l'énergie : le joule $J$.
 \begin{figure}
 \centering
 \definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
 \clip(-3.1072727272727243,-8.697272727272729) rectangle (19.001818181818166,6.593636363636364);
 \draw [shift={(0,0)},line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0:0.5454545454545451) arc (0:38.659808254090095:0.5454545454545451) -- cycle;
 \draw [->,line width=2pt] (0,0) -- (5,4);
@@ -31,13 +31,13 @@ L'unité du travail est celle de l'énergie : le joule $J$.
 \end{scriptsize}
 \end{tikzpicture}
 %\includegraphics[width=3cm]{dessins/produit-scalaire.png}
-\caption{Produit scalaire de la force $\vec{F}$ et de la distance $\vec{d}$. }
+\caption{Produit scalaire de la force $\vec{F}$ et de la distance $\vec{d}$. FIXME à remettre en page}
 \end{figure}
 
-TODO insérer un schéma de produit scalaire
 
-Quelques exemples découlent de ces définitions~:
-\begin{itemize}
+
+Quelques conséquences importantes découlent de ces définitions~:
+\begin{enumerate}
 \item   Une force n'effectue de travail que lorsque son point d'application se
   déplace. Par exemple, la force
 musculaire d'un haltérophile effectue un travail lorsqu'il soulève une
@@ -61,7 +61,7 @@ de la force de pesanteur lors d'un déplacement horizontal.
 
   TODO ajouter une graphe F(t) et $\int_a^b \vec{F} \cdots \vec{dx}$ et des explications 
   
-\end{itemize}
+\end{enumerate}
 
 
 \begin{figure}
@@ -76,19 +76,18 @@ de la force de pesanteur lors d'un déplacement horizontal.
 \caption{}
 \end{figure}
 
-(Sur le schéma~: (x'-x) = d)
+(Sur le schéma~: $(x'-x) = \delta$) FIXME à mettre au bon endroit)
 
-\section{Énergie}
+\subsection{Énergie}
 
-\subsection{Définition}
+\subsubsection{Définition}
 On définit \textbf{ l'énergie est la capacité que
 possède un corps à produire un travail. Son unité le Joule (J).}
 
 La notion d'énergie est sans doute la plus importante de la physique. 
 TODO à expliquer
 
-\subsection{Différentes formes d'énergie~: }
-
+\subsubsection{Différentes formes d'énergie~: }
 \begin{itemize}
 \item cinétique liée à la vitesse et à la masse d'un corps
 \item potentielle liée à la masse d'un corps et à la hauteur à laquelle il
@@ -108,7 +107,7 @@ comprise.
 
 
 
-\section{Puissance }
+\subsection{Puissance }
 
 En \href{https://fr.wikipedia.org/wiki/Physique}{physique},
 la puissance reflète la vitesse à laquelle un
@@ -119,8 +118,8 @@ est fourni.
 d'\href{https://fr.wikipedia.org/wiki/\%C3\%89nergie_(physique)}{\emph{\emph{énergie}}}
 fournie par unité de temps.
 
-Son unité est le watt (w) (Remarque~: ne confondez pas le travail (W) et
-le watt (w).
+Son unité est le watt (\si{w}) (Remarque~: ne confondez pas le travail (W) et
+le watt (\si{w}).
 
 La puissance est une grandeur scalaire.
 
@@ -132,7 +131,7 @@ puissances différentes fournissent \textbf{le même
 
 
 
-\section{Rendement }
+\subsection{Rendement }
 
 \includegraphics[width=3.108cm,height=2.073cm]{Pictures/10000001000000500000003510F712318EAE4AA8.png}\includegraphics[width=5.011cm,height=2.441cm]{Pictures/100000010000046C00000226E09CB53258956B76.png}L'énergie
 utilisable est la part de l'énergie finale \textbf{réellement exploitée}
@@ -142,10 +141,8 @@ Ce rapport est toujours inférieur à 1 (100 \%).
 
 Un rendement de 100\% signifie qu'il n'y a aucune perte d'énergie.
 
-\section{Des ordres de grandeur }
-
-La liste ci-dessous reprend des ordres de grandeur d'énergie à connaître.
-'
+\subsection{Des ordres de grandeur }
+La liste ci-dessous reprend des ordres de grandeur d'énergie à connaître par cœur.
 L'énergie de
 \begin{itemize}
   \item un photon dans le domaine visible ≈ 10\textsuperscript{-19}
@@ -165,7 +162,7 @@ J
 \end{itemize}
 
 La puissance est l'énergie produite ou dissipée par unité de temps, $P = \frac{E}{\Delta t}$. 
-L'unité du SI de puissance est le Watt, $W$. 
+L'unité du SI de puissance est le Watt, $\si{w}$. 
 
 TODO rajouter biographie de Watt et origine du WATT.
 
@@ -187,33 +184,30 @@ cm\textsuperscript{3}) ≈ 40 kw
 \end{itemize}
 
 
+\subsection{Exercices}
 
-\section{Exercices}
-
-\subsection*{Exercice 1}
+\subsubsection*{Exercice 1}
 
 Une voiture de 1,2 tonne et d'une puissance de 3000 watts atteint une
 vitesse de 21,6 km/h en 10 secondes sur une route horizontale.
-
 \begin{enumerate}
   \item   Quelle est l'énergie consommée ?
   \item   Quel sera le rendement~?
 \end{enumerate}
 
-\subsection*{Exercice 2}
-
+\subsubsection*{Exercice 2}
 \begin{enumerate}
   \item Quelle est l'énergie cinétique d'une voiture d'une tonne roulant à 72
 km/h ?
    \item Quel travail faut-il effectuer pour arrêter cette voiture ?
 \end{enumerate}
 
-\subsection*{Exercice 3 }
+\subsubsection*{Exercice 3 }
 
 Quelle est l'énergie consommée si on fournit une puissance de 2000 watts
 pendant une minute ?
 
-\subsection*{Exercice 4}
+\subsubsection*{Exercice 4}
 
 \begin{enumerate}
 \item   Quelle est l'énergie potentielle d'un plongeur de 75 kg sur le
@@ -226,19 +220,19 @@ pendant une minute ?
   plongeoir et à l'arrivée dans l'eau ?
 \end{enumerate}
 
-\subsection*{Exercice 5}
+\subsubsection*{Exercice 5}
 
 Une force de 12 N tire un chariot placé sur des rails. L'angle entre la
 force et le sens des rails (et donc du déplacement) est de 30°. Quel est
 le travail accompli si le chariot se déplace de 14m~?
 
-\subsection*{Exercice 6}
+\subsubsection*{Exercice 6}
 
 Un haltérophile peut arracher du sol une masse de 183 kg et le soulever
 à une hauteur de 2,1 m en 2 secondes. Quelle est la puissance
 développée~?
 
-\subsection*{Exercice 7}
+\subsubsection*{Exercice 7}
 
 Un wagon a une masse de 20 tonnes.
 
@@ -249,14 +243,14 @@ Un wagon a une masse de 20 tonnes.
 \item   Quelle est la puissance du moteur~?
 \end{enumerate}
 
-\end{multicols}
+%\end{multicols}
 
-\section{Résolutions}
+\subsection{Résolutions}
 
-\includegraphics[width=18.226cm,height=25.4cm]{Pictures/100000010000023F00000321650A721E7772A454.png}
+\includegraphics[width=16cm]{Pictures/100000010000023F00000321650A721E7772A454.png}
 
-\includegraphics[width=18.251cm,height=25.141cm]{Pictures/100000010000024A00000328B79BD0C63CC6F682.png}
+\includegraphics[width=16cm]{Pictures/100000010000024A00000328B79BD0C63CC6F682.png}
 
-\includegraphics[width=18.251cm,height=25.141cm]{Pictures/100000010000024A0000032885BF0DEB477D1AAA.png}
+\includegraphics[width=16cm]{Pictures/100000010000024A0000032885BF0DEB477D1AAA.png}
 
 
