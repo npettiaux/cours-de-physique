@@ -1,0 +1,43 @@
+\begin{exercises}[columns=2]
+\begin{exercise}
+Calculate $y = 5 + 7$
+\end{exercises}
+\begin{solution}
+$y = 12$
+\end{solution}
+\begin{exercise}
+Calculate $y = 7 - 12$
+\end{exercises}
+\begin{solution}
+$y = -5$
+\end{solution}
+\end{exercises}
+
+\begin{exerciseseries}[columns=2,subrule=\hrule]{Easy exercises}
+\begin{exercise}
+Calculate $y = 5 + 7$
+\end{exercise}
+\begin{solution}
+$y = 12$
+\end{solution}
+\begin{exercise}
+Calculate $y = 7 - 12$
+\end{exercise}
+\begin{solution}
+$y = -5$
+\end{solution}
+\end{exerciseseries}
+\begin{exerciseseries}{Difficult exercises}
+\begin{exercise}
+Calculate $y = 5 \cdot 7$
+\end{exercise}
+\begin{solution}
+$y = 35$
+\end{solution}
+\begin{exercise}
+Calculate $y = 8 / 4$
+\end{exercise}
+\begin{solution}
+$y = 2$
+\end{solution}
+\end{exerciseseries}

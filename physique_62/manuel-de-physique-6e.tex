@@ -1,0 +1,135 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.6.1
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+
+%\usepackage[a4paper, total={17cm, 26cm}]{geometry}
+\usepackage[a4paper,lmargin=1.5cm,rmargin=1.5cm]{geometry}
+\usepackage{color}
+\usepackage{bookmark}
+\usepackage{siunitx}
+\usepackage{hyperref} % Pour liens internets cliquables
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue, %cyan
+    pdftitle={Cours de physique - DLPP - 2022},
+    %pdfpagemode=FullScreen,
+    }
+
+%
+% pour regrouper exercices et solutions dans un seul fichier et
+% les afficher tantôt ensemble, tantôt séparément
+%
+%\usepackage{exsol}
+
+%
+% pour avoir des références sur internet et un pdf cliquable
+%
+\usepackage{hyperref}
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0}
+]{doclicense}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.8cm}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{black}}
+
+
+% pour les pieds de page et entêtes
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Cours de physique}
+\rhead{énergie, oscillateur et ondes}
+\lfoot{En cours de rédaction et correction - ne pas distribuer - \ccbyncsa}
+\rfoot{Page \thepage}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\usepackage{fontspec}
+%\usepackage{xunicode}
+%\usepackage{xltxtra}
+%\usepackage{array}
+%\usepackage{hhline}
+\usepackage{graphicx}
+%\usepackage{polyglossia}
+\usepackage{longtable}
+%\usepackage{babel}[french]
+%\setdefaultlanguage{french}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\newcounter{Text}
+\renewcommand\theText{\arabic{Text}}
+\title{Cours de physique de $6^e$ secondaire - 2021-2022 \\
+En cours de rédaction et correction - ne pas distribuer \\
+tout commentaire bienvenu par email à \\
+ manueldephysique@educode.be}
+%\author{Alexandra David - Corinne Leyssen - Nicolas Pettiaux - Matteo Poncé}
+\author{James Dann - Corinne Leyssen - Nicolas Pettiaux}
+
+%\includeonly{
+%COURS_00-exercices-test.tex
+%COURS_01-Energie-travail-puissance-rendement
+%COURS_02-Energie-OHEXERCRESOL.tex,
+%COURS_02-Energie_OH.tex
+%COURS_03-Longueur_d_onde_et_ondes_progressives.tex,
+%COURS_04_-Intensité_sonore.tex,
+%COURS_05_-Réflex-Réfract+exerc_résolus.tex
+%COURS_06-Diffraction_+_exercices(résolus).tex
+%COURS_07-Interférences+exerc(résolus).tex
+%COURS_08-Effet_Doppler.tex
+%COURS_09-Expérience_de_Young.tex
+%COURS_10-Diffraction_lumière_par_réseau.tex
+%COURS_11-Réfraction_de_la_lumière.tex
+%COURS_12-Indice_de_réfraction_lumière.tex
+%COURS_13_-Ondes_électromagnétiques.tex
+%COURS_14_-Effet_photoélectrique_et_lumière.tex
+%COURS_15_-Energie_nucléaire.tex
+%COURS_16__-thermodynamique.tex
+%COURS__-Diffraction_de_la_lumière_par_un_réseau+_exerc_résolus.tex
+%}
+
+
+\begin{document}
+\maketitle
+\doclicenseThis
+
+\setcounter{tocdepth}{10}
+\renewcommand\contentsname{Table des matières}
+\tableofcontents
+
+\hrulefill
+
+%\include{COURS_00-exercices-test.tex}
+\include{COURS_01-Energie-travail-puissance-rendement}
+\include{COURS_02-Energie-OH.tex}
+\include{COURS_03-Longueur_d_onde_et_ondes_progressives.tex}
+\include{COURS_04_-Intensité_sonore.tex}
+\include{COURS_05_-Réflex-Réfract+exerc_résolus.tex}
+\include{COURS_06-Diffraction_+_exercices(résolus).tex}
+\include{COURS_07-Interférences+exerc(résolus).tex}
+\include{COURS_08-Effet_Doppler.tex}
+\include{COURS_09-Expérience_de_Young.tex}
+\include{COURS_10-Diffraction_lumière_par_réseau.tex}
+\include{COURS_11-Réfraction_de_la_lumière.tex}
+\include{COURS_12-Indice_de_réfraction_lumière.tex}
+\include{COURS_13_-Ondes_électromagnétiques.tex}
+\include{COURS_14_-Effet_photoélectrique_et_lumière.tex}
+include{COURS_15_-Energie_nucléaire.tex}
+\include{COURS_16__-thermodynamique.tex}
+\include{COURS__-Diffraction_de_la_lumière_par_un_réseau+_exerc_résolus.tex}
+
+
+\end{document}
+
